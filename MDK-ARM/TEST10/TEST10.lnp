@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"test10\startup_stm32f103xb.o"
+"test10\fonts.o"
+"test10\ssd1306.o"
+"test10\mpu6050.o"
+"test10\dht11.o"
+"test10\main.o"
+"test10\stm32f1xx_it.o"
+"test10\stm32f1xx_hal_msp.o"
+"test10\stm32f1xx_hal_gpio_ex.o"
+"test10\stm32f1xx_hal_i2c.o"
+"test10\stm32f1xx_hal.o"
+"test10\stm32f1xx_hal_rcc.o"
+"test10\stm32f1xx_hal_rcc_ex.o"
+"test10\stm32f1xx_hal_gpio.o"
+"test10\stm32f1xx_hal_dma.o"
+"test10\stm32f1xx_hal_cortex.o"
+"test10\stm32f1xx_hal_pwr.o"
+"test10\stm32f1xx_hal_flash.o"
+"test10\stm32f1xx_hal_flash_ex.o"
+"test10\stm32f1xx_hal_exti.o"
+"test10\stm32f1xx_hal_tim.o"
+"test10\stm32f1xx_hal_tim_ex.o"
+"test10\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TEST10\TEST10.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST10.map" -o TEST10\TEST10.axf
